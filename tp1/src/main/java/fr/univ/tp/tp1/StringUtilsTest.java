@@ -22,11 +22,10 @@ public class StringUtilsTest {
 		Assert.assertEquals("", test);
 	}
 	
-	@Test
+	@Test(expected=NullPointerException.class)
 	public void troisiemeTest()
 	{
 		Log.info("Cas null.");
 		String test = StringUtils.reverseString(null);
-		Assert.assertEquals(null, test);
 	}
 }
